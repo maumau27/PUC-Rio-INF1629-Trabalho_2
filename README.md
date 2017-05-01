@@ -8,3 +8,5 @@ https://github.com/crista/exercises-in-programming-style/blob/master/03-monolith
 https://github.com/crista/exercises-in-programming-style/blob/master/04-cookbook/tf-04.py
 
 https://github.com/crista/exercises-in-programming-style/blob/master/05-pipeline/tf-05.py
+
+https://github.com/crista/exercises-in-programming-style/tree/master/08-kick-forward
