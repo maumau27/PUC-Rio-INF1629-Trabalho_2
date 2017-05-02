@@ -1,12 +1,61 @@
 # PUC-Rio-INF1629-Trabalho_2
-Trabalho 2 da disciplina Principios de engenharia de software
 
-Link para estilos : 
+## Trabalho 2 da disciplina Principios da Engenharia de Software : 
 
-https://github.com/crista/exercises-in-programming-style/blob/master/03-monolith/tf-03.py
+##### Professor: Julio Cesar Sampaio do Prado Leite
 
-https://github.com/crista/exercises-in-programming-style/blob/master/04-cookbook/tf-04.py
+##### Alunos: 
+- ##### Nome: Mauricio de Castro Lana
+- ##### Matricula: 1410896
+- ##### Nome: Douglas Mandarino
+- ##### Matricula: 1012377
 
-https://github.com/crista/exercises-in-programming-style/blob/master/05-pipeline/tf-05.py
+## Repositório: 
 
-https://github.com/crista/exercises-in-programming-style/tree/master/08-kick-forward
+CookBook\CookBook.lua: arquivo fonte do estilo cookbook, contem o codigo fonte do programa, e é o executavel.
+
+Autores: Mauricio Lana e Douglas Mandarino
+
+Data: 30/05/2017
+
+-------------------
+
+PipeLine\PipeLine.lua: arquivo fonte do estilo PipeLine, contem o codigo fonte do programa, e é o executavel.
+
+Autores: Mauricio Lana e Douglas Mandarino
+
+Data: 30/05/2017
+
+-------------------
+
+KickForward\KickForward.lua: arquivo fonte do estilo KickForward, contem o codigo fonte do programa, e é o executavel.
+
+Autores: Mauricio Lana e Douglas Mandarino
+
+Data: 30/05/2017
+
+-------------------
+
+Monolith\Monolith.lua: arquivo fonte do estilo Monolith, contem o codigo fonte do programa, e é o executavel.
+
+Autores: Mauricio Lana e Douglas Mandarino
+
+Data: 30/05/2017
+
+-------------------
+
+t.txt: arquivo texto contendo o exemplo para teste dos programas.
+
+Autores: Mauricio Lana e Douglas Mandarino
+
+Data: 30/05/2017
+
+-------------------
+
+stop_words.txt: arquivo contendo palavras de parada usadas pelos programas.
+
+Autores: Mauricio Lana e Douglas Mandarino
+
+Data: 30/05/2017
+
+-------------------
