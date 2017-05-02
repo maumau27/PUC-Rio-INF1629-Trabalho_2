@@ -1,3 +1,17 @@
+--[[
+	Programa : PipeLine.lua
+	Autores : Mauricio De Castro Lana e Douglas Mandarino
+	Data da última modificação: 30/04/2017
+	Versão : 1.0
+	Tamanho : 148 linhas
+]]
+
+--[[
+	Pre-Condições: exista um arquivo em path_to_file
+	Validação: arquivo passado pela main existe na pasta
+	Pos-Condições: variavel data instanciada com o conteudo do arquivo
+	Validação: variavel data é instanciada com o conteudo do arquivo durante a função
+]]
 function read_file(path_to_file)
 
 	local file = io.open(path_to_file, "r")
@@ -7,6 +21,12 @@ function read_file(path_to_file)
 
 end
 
+--[[
+	Pre-Condições: Variavel data estar instanciada a uma String
+	Validação: Variavel str_data é passada pelo retorno de read_file contendo uma string
+	Pos-Condições: String contida por str_data contendo apenas minusculas e caracteres alphnumericos instanciada em pattern
+	Validação: Função torna todos os caracteres minusculas e remove os não alphnumericos em str_data e instancia em pattern
+]]
 function filter_char_and_normalize(str_data)
 
 	local pattern  = str_data:gsub('%W',' '):lower()
@@ -15,6 +35,12 @@ function filter_char_and_normalize(str_data)
 
 end
 
+--[[
+	Pre-Condições: variavel str_data estar instanciada a uma string
+	Validação: Variavel str_data é passada pelo retorno de filter_char_and_normalize contendo uma string
+	Pos-Condições: variavel word estar instanciada a uma tabela de palavras
+	Validação: função preenche a varivel word com todas as palavras de data
+]]
 function scan(str_data)
 
 	local words = {}
@@ -27,6 +53,12 @@ function scan(str_data)
 
 end
 
+--[[
+	Pre-Condições: variavel word_list estar instanciada a uma tabela de palavras
+	Validação: Variavel word_list é passada pelo retorno de scan contendo uma tabela de palavras
+	Pos-Condições: variavel word não conter paravras de parada definidas por stop_words
+	Validação: palavras de parada são removidas de word ao longo da função
+]]
 function remove_stop_words(word_list)
 
 	local file = io.open("stop_words.txt")
@@ -56,6 +88,12 @@ function remove_stop_words(word_list)
 	return words
 end
 
+--[[
+	Pre-Condições: variavel word_list estar instanciada a uma tabela de palavras
+	Validação: Variavel word_list é passada pelo retorno de remove_stop_words contendo uma tabela de palavras
+	Pos-Condições: variavel word_freqs estar instanciada a uma tabela contendo frequencia das palavras
+	Validação: variavel word_freqs instanciada durante a função
+]]
 function frequencies(word_list)
 
 	local word_freq = {}
@@ -71,6 +109,12 @@ function frequencies(word_list)
 	return word_freq
 end
 
+--[[
+	Pre-Condições: variavel word_freqs estar instanciada a uma tabela contendo frequencia das palavras
+	Validação: Variavel word_freqs é passada pelo retorno de frequencies contendo uma tabela contendo frequencia das palavras
+	Pos-Condições: variavel word_freqs ordenada por frequencia
+	Validação: variavel word_freqs é ordenada pela função
+]]
 function sorts(word_freq)
 
 	local temp_word_freqs = {}
@@ -86,6 +130,12 @@ function sorts(word_freq)
 
 end
 
+--[[
+	Pre-Condições: variavel word_freqs estar instanciada a uma tabela contendo frequencia das palavras
+	Validação: Variavel word_freqs é passada pelo retorno de sorts contendo uma tabela contendo frequencia das palavras
+	Pos-Condições: escrever na tela os valores de word_freqs
+	Validação: valores são escritos na tela
+]]
 function print_freq(word_freq)
 
 	for i, v in pairs(word_freq) do
