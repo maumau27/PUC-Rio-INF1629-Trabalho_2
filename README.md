@@ -16,7 +16,7 @@ CookBook\CookBook.lua: arquivo fonte do estilo cookbook, contem o codigo fonte d
 
 Autores: Mauricio Lana e Douglas Mandarino
 
-Data: 30/05/2017
+Data: 30/04/2017
 
 -------------------
 
@@ -24,7 +24,7 @@ PipeLine\PipeLine.lua: arquivo fonte do estilo PipeLine, contem o codigo fonte d
 
 Autores: Mauricio Lana e Douglas Mandarino
 
-Data: 30/05/2017
+Data: 30/04/2017
 
 -------------------
 
@@ -32,7 +32,7 @@ KickForward\KickForward.lua: arquivo fonte do estilo KickForward, contem o codig
 
 Autores: Mauricio Lana e Douglas Mandarino
 
-Data: 30/05/2017
+Data: 30/04/2017
 
 -------------------
 
@@ -40,7 +40,7 @@ Monolith\Monolith.lua: arquivo fonte do estilo Monolith, contem o codigo fonte d
 
 Autores: Mauricio Lana e Douglas Mandarino
 
-Data: 30/05/2017
+Data: 30/04/2017
 
 -------------------
 
@@ -48,7 +48,7 @@ t.txt: arquivo texto contendo o exemplo para teste dos programas.
 
 Autores: Mauricio Lana e Douglas Mandarino
 
-Data: 30/05/2017
+Data: 30/04/2017
 
 -------------------
 
@@ -56,6 +56,6 @@ stop_words.txt: arquivo contendo palavras de parada usadas pelos programas.
 
 Autores: Mauricio Lana e Douglas Mandarino
 
-Data: 30/05/2017
+Data: 30/04/2017
 
 -------------------
