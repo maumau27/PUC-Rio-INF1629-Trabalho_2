@@ -60,13 +60,7 @@ for line in io.lines("t.txt") do
 					if not found then
 						table.insert(word_freqs, {["word"] = word, ["freq"] = 1})
 					elseif #word_freqs > 1 then
-						for n=pair_index, 0, -1 do
-							if word_freqs[pair_index]["freq"] > word_freqs[n] then
-								word_freqs[n], word_freqs[pair_index] = word_freqs[pair_index], word_freqs[n]
-								pair_index = n
-								--table.sort(word_freqs, function(a, b) return a.freq > b.freq end)
-							end
-						end
+						table.sort(word_freqs, function(a, b) return a.freq > b.freq end)
 					end
 				end
 				start_char = nil
