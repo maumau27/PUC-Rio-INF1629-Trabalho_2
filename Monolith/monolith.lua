@@ -1,17 +1,17 @@
 --[[
 	Programa : monolith.lua
 	Autores : Mauricio De Castro Lana e Douglas Mandarino
-	Data da œltima modifica‹o: 03/05/2017
-	Vers‹o : 1.0
+	Data da Å“ltima modificaÂâ€¹o: 03/05/2017
+	Versâ€¹o : 1.0
 	Tamanho : =========================== linhas
 ]]
 
 
 --[[
-	Pre-Condi›es: exista o arquivo no path do programa com palavras a serem lidas
-	Valida‹o: arquivo existe na pasta
-	Pos-Condi›es: escrever na tela, em ordem crescente, a frequencia com que cada uma das palavras mais frequentes no texto aparecem.
-	Valida‹o: valores s‹o escritos na tela
+	Pre-CondiÃ§Ãµes: exista o arquivo no path do programa com palavras a serem lidas
+	ValidaÃ§Ã£o: arquivo existe na pasta
+	Pos-CondiÃ§Ãµes: escrever na tela, em ordem crescente, a frequencia com que cada uma das palavras mais frequentes no texto aparecem.
+	ValidaÃ§Ã£o: valores sâ€¹o escritos na tela
 ]]
 word_freqs = {}
 stop_words = {}
@@ -25,8 +25,8 @@ end
 for i = 97, 122 do
 	table.insert(stop_words, string.char(i))
 end
---TODO : perguntar do erro do algoritimo que caso n tenha espaco no final de cada frase da erro
-for line in io.lines("input.txt") do
+
+for line in io.lines("t.txt") do
 	start_char = nil
 	i = 1
 	for j = 1,#line do
@@ -60,8 +60,13 @@ for line in io.lines("input.txt") do
 					if not found then
 						table.insert(word_freqs, {["word"] = word, ["freq"] = 1})
 					elseif #word_freqs > 1 then
-						table.sort(word_freqs, function(a, b) return a.freq > b.freq end)
-						-- TODO : verificar se pode usar a sort nessa padrao de linguagem
+						for n=pair_index, 0, -1 do
+							if word_freqs[pair_index]["freq"] > word_freqs[n] then
+								word_freqs[n], word_freqs[pair_index] = word_freqs[pair_index], word_freqs[n]
+								pair_index = n
+								--table.sort(word_freqs, function(a, b) return a.freq > b.freq end)
+							end
+						end
 					end
 				end
 				start_char = nil
