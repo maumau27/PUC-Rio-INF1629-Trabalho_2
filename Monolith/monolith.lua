@@ -73,3 +73,4 @@ end
 for i, v in pairs(word_freqs) do
 	print(v['freq'], '-', v['word'])
 end
+--ver comentarios no pull-request(Roxana)
