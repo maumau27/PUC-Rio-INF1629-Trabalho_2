@@ -145,3 +145,4 @@ function print_freq(word_freq)
 end
 
 print_freq(sorts(frequencies(remove_stop_words(scan(filter_char_and_normalize(read_file("t.txt")))))))
+--comentarios no pull-request(roxana)
